@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/yellow"
+    tools:context=".views.HomeFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/userTextView"
+        android:text="Home Page"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        android:textAllCaps="true"
+        android:fontFamily="@font/muliblack"
+        android:letterSpacing="0.1"
+        android:paddingTop="10dp"/>
+
+    <ScrollView
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <fragment
+                android:id="@+id/mapFrag"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="350dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Start:"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/muliregular"/>
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/muliregular"
+                    android:paddingStart="10dp"
+                    android:layout_marginStart="10dp"
+                    android:hint="Enter start location"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="End: "
+                    android:textSize="20sp"
+                    android:fontFamily="@font/muliregular"/>
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/muliregular"
+                    android:paddingStart="10dp"
+                    android:layout_marginStart="10dp"
+                    android:hint="Enter end location"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp">
+
+                <Button
+                    android:id="@+id/getDirectionBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Get Direction"
+                    android:layout_gravity="center"
+                    android:backgroundTint="@color/black"
+                    android:layout_marginTop="10dp"
+                    android:elevation="5dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"/>
+
+                <ImageButton
+                    android:id="@+id/saveImageBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|bottom"
+                    android:backgroundTint="@color/transparent"
+                    android:src="@drawable/baseline_save_24"
+                    android:visibility="visible"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+                <Button
+                    android:id="@+id/showSaveRoutesBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Show Save Route"
+                    android:layout_gravity="center"
+                    android:backgroundTint="@color/black"
+                    android:layout_marginTop="10dp"
+                    android:elevation="5dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"/>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/signOutBtn"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|bottom"
+        android:text="Sign Out"
+        android:drawableEnd="@drawable/baseline_logout_24"
+        android:backgroundTint="@color/black"
+        android:layout_marginTop="10dp"
+        android:elevation="5dp"
+        android:layout_marginBottom="30dp"/>
+
+</LinearLayout>

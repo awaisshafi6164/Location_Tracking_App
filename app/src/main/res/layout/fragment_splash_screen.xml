@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/yellow"
+    android:padding="30dp"
+    tools:context=".views.SplashScreenFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/userTextView"
+        android:text="@string/app_name_splash"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:textColor="@color/black"
+        android:textAllCaps="true"
+        android:fontFamily="@font/muliblack"
+        android:letterSpacing="0.1"/>
+
+</LinearLayout>

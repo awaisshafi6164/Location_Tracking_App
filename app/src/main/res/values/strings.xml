@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Location_Tracking_App</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- My Strings -->
+    <string name="already_login">already have an account? Sign In</string>
+    <string name="create_account">Didn\'t have an account? create an account</string>
+    <string name="app_name_splash">Location\nTracking APP</string>
+
+    <string name="map_api_key">AIzaSyCkj3vO8eHVS8j4A2axlT-WifX__dOOURw</string>
+
+</resources>
