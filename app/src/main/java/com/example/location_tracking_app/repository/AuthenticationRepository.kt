@@ -1,9 +1,17 @@
 package com.example.location_tracking_app.repository
 
+import android.Manifest
 import android.app.Application
+import android.content.pm.PackageManager
 import android.widget.Toast
+import androidx.core.app.ActivityCompat
+import androidx.core.content.ContentProviderCompat.requireContext
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
+import com.example.location_tracking_app.R
+import com.google.android.gms.maps.GoogleMap
+import com.google.android.gms.maps.OnMapReadyCallback
+import com.google.android.gms.maps.SupportMapFragment
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
 import com.google.firebase.database.*
@@ -89,5 +97,9 @@ class AuthenticationRepository(private val application: Application) {
         }
 
         return usernameLiveData
+    }
+
+    fun toast(message: String){
+        Toast.makeText(application,message,Toast.LENGTH_SHORT).show()
     }
 }

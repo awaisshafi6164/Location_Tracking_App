@@ -174,14 +174,6 @@ class HomeFragment : Fragment() {
                 }
             }
 
-
-//            val URL = getDirectionURL(startLocation, location2)
-//            Log.d("GoogleMap", "URL : $URL")
-//            GetDirection(URL).execute()
-
-//            val URL = getDirectionURL(location1, location2)
-//            Log.d("GoogleMap", "URL : $URL")
-//            GetDirection(URL).execute()
         })
 
         //
